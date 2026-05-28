@@ -22,6 +22,16 @@ This repository contains code and notebooks for a breast cancer detection pipeli
 - Normalize pixel values (ImageNet mean/std for transfer learning or 0-1 scaling for custom models).
 - Optional augmentations: random rotations, flips, brightness/contrast jitter, random crops.
 
+## Results Overview
+
+Our Vision Transformer (ViT) model successfully identifies high-attention regions in medical images, highlighting critical areas for cancer detection:
+
+![VIT Attention Visualization](images/vit_attention.png)
+
+The model achieves strong performance with key metrics including high AUC, sensitivity, and specificity. Attention visualizations reveal that the model focuses on clinically relevant regions, improving interpretability and trustworthiness of predictions.
+
+For detailed results and evaluation metrics, see [Results & Evaluation](docs/results.md).
+
 ## Quick Start
 
 1. Set up your environment (see [Requirements](docs/requirements.md)):

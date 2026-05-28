@@ -15,7 +15,21 @@
 
 ## Model / Architecture
 
-Start with transfer learning (e.g., EfficientNet/ResNet) and optionally iterate to lightweight or ensemble models depending on accuracy/latency tradeoffs.
+We evaluate multiple state-of-the-art architectures for breast cancer detection:
+
+### Vision Transformer (ViT)
+![Vision Transformer Architecture](../images/vit.png)
+The ViT model excels at capturing long-range dependencies and provides interpretable attention maps, making it ideal for medical image analysis.
+
+### ResNet
+![ResNet Architecture](../images/resnet.png)
+A robust baseline featuring residual connections for deep network training, providing strong baseline performance.
+
+### EfficientNet
+![EfficientNet Architecture](../images/efficinet.png)
+Balances accuracy and computational efficiency through compound scaling, suitable for deployment-constrained environments.
+
+**Recommendation:** Start with transfer learning using these pre-trained architectures and optionally iterate to ensemble models depending on accuracy/latency tradeoffs.
 
 ## Training Configuration
 
