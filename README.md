@@ -32,34 +32,6 @@ The model achieves strong performance with key metrics including high AUC, sensi
 
 For detailed results and evaluation metrics, see [Results & Evaluation](docs/results.md).
 
-## Quick Start
-
-1. Set up your environment (see [Requirements](docs/requirements.md)):
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-2. Prepare data:
-
-```bash
-python scripts/prepare_data.py --input data/raw --output data/processed
-```
-
-3. Train model:
-
-```bash
-python train.py --config configs/train.yaml
-```
-
-4. Evaluate:
-
-```bash
-python evaluate.py --checkpoint runs/exp1/checkpoint.pt --data data/processed/test
-```
-
 ## Documentation
 
 For detailed information, see the following documentation pages:
